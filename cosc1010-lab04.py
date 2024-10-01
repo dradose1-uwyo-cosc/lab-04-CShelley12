@@ -1,8 +1,8 @@
-# Your Name Here
+# Chase Shelley
 # UWYO COSC 1010
-# Submission Date
+# Septemeber 30, 2024
 # Lab 03 
-# Lab Section: 
+# Lab Section: 16
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -92,6 +92,17 @@ min_temps = [
     17, 28, 23, 25, 23, 23, -3, -15, 19, 5,
     -1, -1, 11, 13
 ]
+max_sum = 0
+for max in range(len(max_temps)):
+    max_sum += max_temps[max]
+
+print((max_sum) / (len(max_temps)))
+
+min_sum = 0
+for min in range(len(min_temps)):
+    min_sum += min_temps[min]
+
+print((min_sum) / (len(min_temps)))
 
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
@@ -102,4 +113,5 @@ min_temps = [
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-
+print(sorted(max_temps)[-1])
+print(sorted(min_temps)[0])
